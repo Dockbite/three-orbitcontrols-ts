@@ -55,7 +55,6 @@ export declare class OrbitControls extends THREE.EventDispatcher {
     private target0;
     private position0;
     private zoom0;
-    private state;
     private panOffset;
     private zoomChanged;
     private rotateStart;
@@ -84,6 +83,7 @@ export declare class OrbitControls extends THREE.EventDispatcher {
     private onTouchEnd;
     private onTouchMove;
     private onKeyDown;
+    state: number;
     constructor(object: THREE.Camera, domElement?: HTMLElement, domWindow?: Window);
     update(): boolean;
     panLeft(distance: number, objectMatrix: any): void;
