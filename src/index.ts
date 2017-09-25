@@ -59,6 +59,7 @@ export class OrbitControls extends THREE.EventDispatcher {
   mouseButtons: { ORBIT: THREE.MOUSE; ZOOM: THREE.MOUSE; PAN: THREE.MOUSE; };
   enableDamping: boolean;
   dampingFactor: number;
+  state: number;
 
   private spherical: THREE.Spherical;
   private sphericalDelta: THREE.Spherical;
@@ -101,7 +102,7 @@ export class OrbitControls extends THREE.EventDispatcher {
   private onTouchMove: EventListener;
   private onKeyDown: EventListener;
 
-  public state: number;
+ 
 
   constructor (object: THREE.Camera, domElement?: HTMLElement, domWindow?: Window) {
     super();

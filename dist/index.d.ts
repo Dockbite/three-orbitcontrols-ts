@@ -49,6 +49,7 @@ export declare class OrbitControls extends THREE.EventDispatcher {
     };
     enableDamping: boolean;
     dampingFactor: number;
+    state: number;
     private spherical;
     private sphericalDelta;
     private scale;
@@ -83,7 +84,6 @@ export declare class OrbitControls extends THREE.EventDispatcher {
     private onTouchEnd;
     private onTouchMove;
     private onKeyDown;
-    state: number;
     constructor(object: THREE.Camera, domElement?: HTMLElement, domWindow?: Window);
     update(): boolean;
     panLeft(distance: number, objectMatrix: any): void;
